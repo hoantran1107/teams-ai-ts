@@ -1,0 +1,137 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Teams AI Library - TypeScript Documentation
+
+> Microsoft Teams AI Library (v2) - A comprehensive framework for building AI-powered Teams applications using TypeScript.
+
+## Main Documentation
+
+### [Teams](https://microsoft.github.io/teams-ai/docs_typescript/teams.txt)
+
+- [Core Concepts](https://microsoft.github.io/teams-ai/docs_typescript/teams-core-concepts.txt): Understand Teams app architecture including app registration, Azure Bot Service, DevTunnel, and sideloading processes.
+- [Manifest](https://microsoft.github.io/teams-ai/docs_typescript/teams-manifest.txt): Learn about Teams app manifest requirements, permissions, and sideloading process for app installation.
+- [Agents Toolkit](https://microsoft.github.io/teams-ai/docs_typescript/microsoft-365-agents-toolkit.txt): Automate Teams app development with Microsoft 365 Agents Toolkit for manifest management, sideloading, and deployment.
+
+### [Developer Tools](https://microsoft.github.io/teams-ai/docs_typescript/developer-tools.txt)
+
+- [Cli](https://microsoft.github.io/teams-ai/docs_typescript/teams-cli.txt): Comprehensive guide to the Teams CLI tool for creating, managing, and deploying Teams AI applications with simple command-line operations.
+
+### [Devtools](https://microsoft.github.io/teams-ai/docs_typescript/devtools.txt)
+
+- [Chat](https://microsoft.github.io/teams-ai/docs_typescript/devtools-chat.txt): Test chat functionality with your Teams agent using the lightweight DevTools without sideloading into Teams.
+- [Inspect](https://microsoft.github.io/teams-ai/docs_typescript/inspect-activities.txt): Inspect all incoming and outgoing activities with your agent using DevTools Activities page for debugging.
+- [Cards](https://microsoft.github.io/teams-ai/docs_typescript/cards.txt): Design and test Adaptive Cards using the DevTools card designer with live preview and JSON editing.
+
+
+## TypeScript Specific Documentation
+
+### [Getting Started](https://microsoft.github.io/teams-ai/docs_typescript/getting-started.txt)
+
+- [Quickstart](https://microsoft.github.io/teams-ai/docs_typescript/quickstart.txt): Step-by-step guide to quickly get started with Teams AI Library v2 using the Teams CLI to create your first agent.
+- [Code Basics](https://microsoft.github.io/teams-ai/docs_typescript/code-basics.txt): Understanding the structure and key components of a Teams AI application including the App class, plugins, and project organization.
+- [Running In Teams](https://microsoft.github.io/teams-ai/docs_typescript/running-in-teams.txt): Guide to deploying and testing your locally running agent in Microsoft Teams using the Microsoft 365 Agents Toolkit.
+- [LLMs](https://microsoft.github.io/teams-ai/docs_typescript/llmstxt.txt): Links to LLM context files that provide coding assistants with documentation for the Teams AI TypeScript library.
+
+### [Essentials](https://microsoft.github.io/teams-ai/docs_typescript/essentials.txt)
+
+- [App Basics](https://microsoft.github.io/teams-ai/docs_typescript/app-basics.txt): Comprehensive guide to the App class, the main entry point for Teams AI agents that handles server hosting, request routing, authentication, and plugin management.
+- [On Event](https://microsoft.github.io/teams-ai/docs_typescript/listening-to-events.txt): Understanding how to listen to and handle events in Teams AI applications, including user actions and application server events.
+- [Api](https://microsoft.github.io/teams-ai/docs_typescript/teams-api-client.txt): Overview of the Teams API Client and how to use it to interact with conversations, meetings, and teams in your application.
+- [Graph](https://microsoft.github.io/teams-ai/docs_typescript/graph-api-client.txt): Guide to using the Microsoft Graph API client to access Microsoft 365 data and services from your Teams AI application.
+
+### [On Activity](https://microsoft.github.io/teams-ai/docs_typescript/on-activity.txt)
+
+- [Activity Ref](https://microsoft.github.io/teams-ai/docs_typescript/activity-type-reference.txt): Complete reference guide for all activity types and routes available in Teams AI applications, including core activities and configuration routes.
+
+### [Sending Messages](https://microsoft.github.io/teams-ai/docs_typescript/sending-messages.txt)
+
+- [Proactive Messaging](https://microsoft.github.io/teams-ai/docs_typescript/proactive-messaging.txt): Learn how to send proactive messages to users without waiting for them to initiate the conversation, including storing conversation IDs and sending notifications.
+
+
+### [In Depth Guides](https://microsoft.github.io/teams-ai/docs_typescript/in-depth-guides.txt)
+
+- [Feedback](https://microsoft.github.io/teams-ai/docs_typescript/feedback.txt): How to implement user feedback collection in Teams AI applications using specialized UI components and feedback storage.
+
+### [Adaptive Cards](https://microsoft.github.io/teams-ai/docs_typescript/adaptive-cards.txt)
+
+- [Building Adaptive Cards](https://microsoft.github.io/teams-ai/docs_typescript/building-adaptive-cards.txt): Guide to building Adaptive Cards using TypeScript/JavaScript with full IntelliSense and compiler safety for rich, interactive UI fragments.
+- [Executing Actions](https://microsoft.github.io/teams-ai/docs_typescript/executing-actions.txt): How to implement interactive elements in Adaptive Cards through actions like buttons, links, and input submission triggers.
+
+### [Dialogs](https://microsoft.github.io/teams-ai/docs_typescript/dialogs.txt)
+
+- [Creating Dialogs](https://microsoft.github.io/teams-ai/docs_typescript/creating-dialogs.txt): Step-by-step guide to creating dialogs in Teams using Adaptive Cards for interactive user experiences and data collection.
+- [Handling Dialog Submissions](https://microsoft.github.io/teams-ai/docs_typescript/handling-dialog-submissions.txt): How to handle dialog submissions and process form data when users submit dialogs in Teams applications.
+- [Handling Multi Step Forms](https://microsoft.github.io/teams-ai/docs_typescript/handling-multi-step-forms.txt): How to create complex multi-step dialog forms with dynamic flow control based on user input and previous answers.
+
+### [Message Extensions](https://microsoft.github.io/teams-ai/docs_typescript/message-extensions.txt)
+
+- [Action Commands](https://microsoft.github.io/teams-ai/docs_typescript/action-commands.txt): How to implement action commands in message extensions to present users with modal dialogs for collecting and processing information.
+- [Search Commands](https://microsoft.github.io/teams-ai/docs_typescript/search-commands.txt): How to implement search commands in message extensions to allow users to search external systems and insert results as cards.
+- [Settings](https://microsoft.github.io/teams-ai/docs_typescript/settings.txt): How to add configurable settings pages to your message extension app for user customization and preferences.
+- [Link Unfurling](https://microsoft.github.io/teams-ai/docs_typescript/link-unfurling.txt): How to implement link unfurling to automatically enhance pasted URLs with rich cards containing additional information and actions.
+
+### [User Authentication](https://microsoft.github.io/teams-ai/docs_typescript/user-authentication.txt)
+
+- [Quickstart](https://microsoft.github.io/teams-ai/docs_typescript/quickstart.txt): Quickstart guide for enabling user authentication and Microsoft Graph API access in Teams AI applications.
+- [Auth Sso](https://microsoft.github.io/teams-ai/docs_typescript/how-auth-works.txt): Comparison and explanation of OAuth and Single Sign-On (SSO) authentication methods in Teams applications.
+- [Setup](https://microsoft.github.io/teams-ai/docs_typescript/app-setup.txt): Guide to configuring user authentication in Teams AI applications, including setup of OAuth flows and secure API access.
+- [Signin](https://microsoft.github.io/teams-ai/docs_typescript/signing-in.txt): How to implement user sign-in with OAuth in Teams AI applications using the built-in signin method.
+- [Signout](https://microsoft.github.io/teams-ai/docs_typescript/signing-out.txt): How to sign users out in Teams AI applications by discarding tokens using the signout method.
+
+### [Ai](https://microsoft.github.io/teams-ai/docs_typescript/ai.txt)
+
+- [Setup And Prereqs](https://microsoft.github.io/teams-ai/docs_typescript/setup-prerequisites.txt): Prerequisites and setup guide for integrating LLMs into Teams AI applications, including API keys and Azure OpenAI configuration.
+- [Chat](https://microsoft.github.io/teams-ai/docs_typescript/chat-generation.txt): Guide to implementing chat generation with AI models in Teams applications using ChatPrompt and Model components.
+- [Function Calling](https://microsoft.github.io/teams-ai/docs_typescript/functions.txt): How to implement function calling in AI models, allowing the LLM to execute functions as part of its response generation.
+- [Keeping State](https://microsoft.github.io/teams-ai/docs_typescript/keeping-state.txt): Guide to managing conversation state and history in AI applications, including persistent storage options for conversation context.
+- [Best Practices](https://microsoft.github.io/teams-ai/docs_typescript/best-practices.txt): Best practices for AI integration in Teams applications, including AI-generated indicators and user experience guidelines.
+
+### [Mcp](https://microsoft.github.io/teams-ai/docs_typescript/mcp.txt)
+
+- [Mcp Server](https://microsoft.github.io/teams-ai/docs_typescript/mcp-server.txt): How to convert your Teams app into an MCP server using the McpPlugin to expose tools, resources, and prompts to other MCP applications.
+- [Mcp Client](https://microsoft.github.io/teams-ai/docs_typescript/mcp-client.txt): How to implement an MCP client to leverage remote MCP servers and their tools in your AI agent application.
+
+### [A2a](https://microsoft.github.io/teams-ai/docs_typescript/a2a.txt)
+
+- [A2a Server](https://microsoft.github.io/teams-ai/docs_typescript/a2a-server.txt): How to implement an A2A server to expose your Teams app capabilities to other agents using the A2A protocol.
+- [A2a Client](https://microsoft.github.io/teams-ai/docs_typescript/a2a-client.txt): How to implement an A2A client to proactively send tasks to A2A servers using the AgentManager.
+
+
+### [Tabs](https://microsoft.github.io/teams-ai/docs_typescript/tabs.txt)
+
+- [Getting Started](https://microsoft.github.io/teams-ai/docs_typescript/getting-started.txt): Set up new tab app projects or add Teams client capabilities to existing tab applications.
+- [Using The App](https://microsoft.github.io/teams-ai/docs_typescript/using-the-app.txt): Initialize and use the Teams client App to call Graph APIs and remote agent functions.
+- [App Options](https://microsoft.github.io/teams-ai/docs_typescript/app-options.txt): Configure app settings for observability, MSAL authentication, and remote agent function calling.
+- [Function Calling](https://microsoft.github.io/teams-ai/docs_typescript/functions.txt): Call remote agent functions from tab apps with authentication and custom headers using the exec() method.
+- [Graph](https://microsoft.github.io/teams-ai/docs_typescript/microsoft-graph-client.txt): Access Microsoft Graph APIs with type-safe client and manage user consent for permissions.
+
+### [Observability](https://microsoft.github.io/teams-ai/docs_typescript/observability.txt)
+
+- [Middleware](https://microsoft.github.io/teams-ai/docs_typescript/middleware.txt): Create middleware for logging, validation, and other cross-cutting concerns using the app.use method.
+- [Logging](https://microsoft.github.io/teams-ai/docs_typescript/custom-logger.txt): Configure custom loggers in your Teams app to control log levels and output destinations.
+
+
+### [Migrations](https://microsoft.github.io/teams-ai/docs_typescript/migrations.txt)
+
+
+### [BotBuilder](https://microsoft.github.io/teams-ai/docs_typescript/botbuilder.txt)
+
+- [Adapters](https://microsoft.github.io/teams-ai/docs_typescript/adapters.txt): How to migrate BotBuilder adapters to Teams AI Library v2 plugins for handling bot communication and middleware.
+- [Activity Handlers](https://microsoft.github.io/teams-ai/docs_typescript/activity-handlers.txt): How to migrate BotBuilder ActivityHandler patterns to Teams AI Library v2 activity routing system.
+- [User Authentication](https://microsoft.github.io/teams-ai/docs_typescript/user-authentication.txt): Migrate from BotBuilder's complex OAuthPrompt dialogs to Teams AI's simple signin/signout methods.
+
+### Turn Context
+
+- [Sending Activities](https://microsoft.github.io/teams-ai/docs_typescript/sending-activities.txt): Migrate from BotBuilder's TurnContext activity sending to Teams AI's simplified send method with better Adaptive Card support.
+- [Proactive Activities](https://microsoft.github.io/teams-ai/docs_typescript/proactive-activities.txt): Migrate from BotBuilder's complex conversation reference handling to Teams AI's simple conversation ID-based proactive messaging.
+- [README](https://microsoft.github.io/teams-ai/docs_typescript/turn-context.txt): Understand how Teams AI's IActivityContext replaces BotBuilder's TurnContext for handling incoming data and APIs.
+- [The Api Client](https://microsoft.github.io/teams-ai/docs_typescript/the-api-client.txt): Replace BotBuilder's static TeamsInfo class with Teams AI's injected ApiClient for cleaner API interactions.
+
+
+### [V1](https://microsoft.github.io/teams-ai/docs_typescript/v1.txt)
+
+
+

@@ -1,0 +1,44 @@
+version: "3.8"
+
+services:
+  mcp-atlassian:
+    image: ghcr.io/sooperset/mcp-atlassian:latest
+    container_name: mcp-atlassian
+    ports:
+      - "3000:3000" # MCP server port
+    environment:
+      # Jira Configuration
+      - JIRA_URL=https://your-domain.atlassian.net
+      - JIRA_EMAIL=your-email@example.com
+      - JIRA_API_TOKEN=your-jira-api-token
+
+      # Confluence Configuration
+      - CONFLUENCE_URL=https://your-domain.atlassian.net
+      - CONFLUENCE_EMAIL=your-email@example.com
+      - CONFLUENCE_API_TOKEN=your-confluence-api-token
+
+      # Optional: Enable specific tools only
+      - ENABLED_TOOLS=jira_get_issue,jira_search,confluence_search,confluence_get_page
+
+      # Optional: Read-only mode
+      # - READ_ONLY_MODE=true
+
+      # Optional: Debug logging
+      - MCP_VERY_VERBOSE=true
+      - MCP_LOGGING_STDOUT=true
+
+      # Optional: Custom headers (if needed)
+      # - JIRA_CUSTOM_HEADERS=X-Custom=value1,X-Other=value2
+      # - CONFLUENCE_CUSTOM_HEADERS=X-Custom=value1,X-Other=value2
+
+    volumes:
+      # Optional: Mount logs directory
+      - ./logs:/app/logs
+
+    restart: unless-stopped
+    networks:
+      - mcp-network
+
+networks:
+  mcp-network:
+    driver: bridge
